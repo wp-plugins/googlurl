@@ -1,7 +1,7 @@
 === Googlurl ===
 Contributors: zourbuth
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6D3WAJTVKAFC
-Tags: googl, goo.gl, shortener, link, url
+Tags: googl, goo.gl, shortener, tiny, link, url, analytics, canonical, links, permalinks, redirect, shorturl, graph, visualization, referrer, clicks, browsers, platforms, countries
 Requires at least: 3.0
 Tested up to: 3.9
 Stable tag: 0.0.1
@@ -24,6 +24,12 @@ user browsers, operating system platforms and user countries.
 <li>Updates daily, or use your own schedule.</li>
 <li>Google graphs visualization.</li>
 </ul>
+
+<h3>Supports & Features</h3>
+This plugin does not match to your site style? Is this script not quite working as it should? 
+Having trouble installing? Or need some custom modifications that aren’t already included? 
+Or you want more features on next release? 
+Feel free to get in touch about any of your queries via <a href="http://zourbuth.com/googlurl/">plugin homepage</a>.
 
 
 == Installation ==
