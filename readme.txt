@@ -25,11 +25,13 @@ user browsers, operating system platforms and user countries.
 <li>Google graphs visualization.</li>
 </ul>
 
+Read more at <a href="http://www.ground6.com/wordpress-plugins/google-url-shortener/"><strong>plugin homepage</strong></a>.
+
 <h3>Supports & Features</h3>
 This plugin does not match to your site style? Is this script not quite working as it should? 
 Having trouble installing? Or need some custom modifications that aren’t already included? 
 Or you want more features on next release? 
-Feel free to get in touch about any of your queries via <a href="http://zourbuth.com/googlurl/">plugin homepage</a>.
+Feel free to get in touch about any of your queries via <a href="http://www.ground6.com/wordpress-plugins/google-url-shortener/">plugin supports page</a>.
 
 
 == Installation ==
@@ -43,9 +45,7 @@ You can use the built in installer and upgrader, or you can install the plugin m
 
 
 == Screenshots ==
-
-1. URL shortened list
-2. Analytic reports
+http://www.ground6.com/wordpress-plugins/google-url-shortener/screenshots/
 
 
 == Changelog ==

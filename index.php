@@ -1,7 +1,7 @@
 <?php
 /*
     Plugin Name: Google URL Shortener
-    Plugin URI: http://zourbuth.com/googlurl/
+    Plugin URI: http://www.ground6.com/wordpress-plugins/google-url-shortener/
     Description: Bring the power and reliable URL shortner from Goo.gl to your dashboard. This plugin will let you to create shortened URL from administrator dashboard. Each shortened URL will be updated daily and you can analyze it by total clicks, referrer sites, user browsers, operating system platforms and user countries.
     Version: 0.0.1
     Author: zourbuth
