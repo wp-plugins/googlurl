@@ -300,8 +300,11 @@ class Googl_Type {
 	
 	
 	function meta_box_callback_referrers( $post ) {
-		$data = unserialize( $post->post_content );
 		$period = 'allTime';
+		$data = unserialize( $post->post_content );
+		if( ! isset( $data->analytics->$period->referrers ) && ! is_array( $data->analytics->$period->referrers ) )
+			return;
+
 		$clicks = array();
 		$clicks[] = "['Referrers', 'Count']";
 		foreach( $data->analytics->$period->referrers as $referrers )

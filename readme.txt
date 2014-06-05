@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: googl, goo.gl, shortener, tiny, link, url, analytics, canonical, links, permalinks, redirect, shorturl, graph, visualization, referrer, clicks, browsers, platforms, countries
 Requires at least: 3.0
 Tested up to: 3.9
-Stable tag: 0.0.1
+Stable tag: 0.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,8 @@ http://www.ground6.com/wordpress-plugins/google-url-shortener/screenshots/
 
 
 == Changelog ==
+= 0.0.2 =
+Fixed referrers metabox report
 = 0.0.1 =
 Initial release
 
