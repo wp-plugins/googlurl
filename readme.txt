@@ -3,8 +3,8 @@ Contributors: zourbuth
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=W6D3WAJTVKAFC
 Tags: googl, goo.gl, shortener, tiny, link, url, analytics, canonical, links, permalinks, redirect, shorturl, graph, visualization, referrer, clicks, browsers, platforms, countries
 Requires at least: 3.0
-Tested up to: 3.9
-Stable tag: 0.0.2
+Tested up to: 4.1
+Stable tag: 0.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,8 +49,14 @@ http://www.ground6.com/wordpress-plugins/google-url-shortener/screenshots/
 
 
 == Changelog ==
+= 0.0.3 =
+API key for limited requests added
+Setting page added
+Custom script and styles added
+
 = 0.0.2 =
-Fixed referrers metabox report
+Referrers metabox report fixed
+
 = 0.0.1 =
 Initial release
 

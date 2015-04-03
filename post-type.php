@@ -21,7 +21,7 @@
 
 /**
  * Exit if accessed directly
- * @since 2.0.0
+ * @since 0.0.1
  */
 if ( ! defined( 'ABSPATH' ) )
 	exit;
@@ -40,22 +40,91 @@ class Googl_Type {
 		$this->textdomain = GOOGLULR_TEXTDOMAIN;
 		$this->countries = array( 'AF' => 'Afghanistan', 'AX' => 'Åland Islands', 'AL' => 'Albania', 'DZ' => 'Algeria', 'AS' => 'American Samoa', 'AD' => 'Andorra', 'AO' => 'Angola', 'AI' => 'Anguilla', 'AQ' => 'Antarctica', 'AG' => 'Antigua And Barbuda', 'AR' => 'Argentina', 'AM' => 'Armenia', 'AW' => 'Aruba', 'AU' => 'Australia', 'AT' => 'Austria', 'AZ' => 'Azerbaijan', 'BS' => 'Bahamas', 'BH' => 'Bahrain', 'BD' => 'Bangladesh', 'BB' => 'Barbados', 'BY' => 'Belarus', 'BE' => 'Belgium', 'BZ' => 'Belize', 'BJ' => 'Benin', 'BM' => 'Bermuda', 'BT' => 'Bhutan', 'BO' => 'Bolivia, Plurinational State Of', 'BQ' => 'Bonaire, Sint Eustatius And Saba', 'BA' => 'Bosnia And Herzegovina', 'BW' => 'Botswana', 'BV' => 'Bouvet Island', 'BR' => 'Brazil', 'IO' => 'British Indian Ocean Territory', 'BN' => 'Brunei Darussalam', 'BG' => 'Bulgaria', 'BF' => 'Burkina Faso', 'BI' => 'Burundi', 'KH' => 'Cambodia', 'CM' => 'Cameroon', 'CA' => 'Canada', 'CV' => 'Cape Verde', 'KY' => 'Cayman Islands', 'CF' => 'Central African Republic', 'TD' => 'Chad', 'CL' => 'Chile', 'CN' => 'China', 'CX' => 'Christmas Island', 'CC' => 'Cocos (keeling) Islands', 'CO' => 'Colombia', 'KM' => 'Comoros', 'CG' => 'Congo', 'CD' => 'Congo, The Democratic Republic Of The', 'CK' => 'Cook Islands', 'CR' => 'Costa Rica', 'CI' => 'Côte D\'ivoire', 'HR' => 'Croatia', 'CU' => 'Cuba', 'CW' => 'Curaçao', 'CY' => 'Cyprus', 'CZ' => 'Czech Republic', 'DK' => 'Denmark', 'DJ' => 'Djibouti', 'DM' => 'Dominica', 'DO' => 'Dominican Republic', 'EC' => 'Ecuador', 'EG' => 'Egypt', 'SV' => 'El Salvador', 'GQ' => 'Equatorial Guinea', 'ER' => 'Eritrea', 'EE' => 'Estonia', 'ET' => 'Ethiopia', 'FK' => 'Falkland Islands (malvinas)', 'FO' => 'Faroe Islands', 'FJ' => 'Fiji', 'FI' => 'Finland', 'FR' => 'France', 'GF' => 'French Guiana', 'PF' => 'French Polynesia', 'TF' => 'French Southern Territories', 'GA' => 'Gabon', 'GM' => 'Gambia', 'GE' => 'Georgia', 'DE' => 'Germany', 'GH' => 'Ghana', 'GI' => 'Gibraltar', 'GR' => 'Greece', 'GL' => 'Greenland', 'GD' => 'Grenada', 'GP' => 'Guadeloupe', 'GU' => 'Guam', 'GT' => 'Guatemala', 'GG' => 'Guernsey', 'GN' => 'Guinea', 'GW' => 'Guinea-bissau', 'GY' => 'Guyana', 'HT' => 'Haiti', 'HM' => 'Heard Island And Mcdonald Islands', 'VA' => 'Holy See (vatican City State)', 'HN' => 'Honduras', 'HK' => 'Hong Kong', 'HU' => 'Hungary', 'IS' => 'Iceland', 'IN' => 'India', 'ID' => 'Indonesia', 'IR' => 'Iran, Islamic Republic Of', 'IQ' => 'Iraq', 'IE' => 'Ireland', 'IM' => 'Isle Of Man', 'IL' => 'Israel', 'IT' => 'Italy', 'JM' => 'Jamaica', 'JP' => 'Japan', 'JE' => 'Jersey', 'JO' => 'Jordan', 'KZ' => 'Kazakhstan', 'KE' => 'Kenya', 'KI' => 'Kiribati', 'KP' => 'Korea, Democratic People\'s Republic Of', 'KR' => 'Korea, Republic Of', 'KW' => 'Kuwait', 'KG' => 'Kyrgyzstan', 'LA' => 'Lao People\'s Democratic Republic', 'LV' => 'Latvia', 'LB' => 'Lebanon', 'LS' => 'Lesotho', 'LR' => 'Liberia', 'LY' => 'Libya', 'LI' => 'Liechtenstein', 'LT' => 'Lithuania', 'LU' => 'Luxembourg', 'MO' => 'Macao', 'MK' => 'Macedonia, The Former Yugoslav Republic Of', 'MG' => 'Madagascar', 'MW' => 'Malawi', 'MY' => 'Malaysia', 'MV' => 'Maldives', 'ML' => 'Mali', 'MT' => 'Malta', 'MH' => 'Marshall Islands', 'MQ' => 'Martinique', 'MR' => 'Mauritania', 'MU' => 'Mauritius', 'YT' => 'Mayotte', 'MX' => 'Mexico', 'FM' => 'Micronesia, Federated States Of', 'MD' => 'Moldova, Republic Of', 'MC' => 'Monaco', 'MN' => 'Mongolia', 'ME' => 'Montenegro', 'MS' => 'Montserrat', 'MA' => 'Morocco', 'MZ' => 'Mozambique', 'MM' => 'Myanmar', 'NA' => 'Namibia', 'NR' => 'Nauru', 'NP' => 'Nepal', 'NL' => 'Netherlands', 'NC' => 'New Caledonia', 'NZ' => 'New Zealand', 'NI' => 'Nicaragua', 'NE' => 'Niger', 'NG' => 'Nigeria', 'NU' => 'Niue', 'NF' => 'Norfolk Island', 'MP' => 'Northern Mariana Islands', 'NO' => 'Norway', 'OM' => 'Oman', 'PK' => 'Pakistan', 'PW' => 'Palau', 'PS' => 'Palestinian Territory, Occupied', 'PA' => 'Panama', 'PG' => 'Papua New Guinea', 'PY' => 'Paraguay', 'PE' => 'Peru', 'PH' => 'Philippines', 'PN' => 'Pitcairn', 'PL' => 'Poland', 'PT' => 'Portugal', 'PR' => 'Puerto Rico', 'QA' => 'Qatar', 'RE' => 'Réunion', 'RO' => 'Romania', 'RU' => 'Russian Federation', 'RW' => 'Rwanda', 'BL' => 'Saint Barthélemy', 'SH' => 'Saint Helena, Ascension And Tristan Da Cunha', 'KN' => 'Saint Kitts And Nevis', 'LC' => 'Saint Lucia', 'MF' => 'Saint Martin (french Part)', 'PM' => 'Saint Pierre And Miquelon', 'VC' => 'Saint Vincent And The Grenadines', 'WS' => 'Samoa', 'SM' => 'San Marino', 'ST' => 'Sao Tome And Principe', 'SA' => 'Saudi Arabia', 'SN' => 'Senegal', 'RS' => 'Serbia', 'SC' => 'Seychelles', 'SL' => 'Sierra Leone', 'SG' => 'Singapore', 'SX' => 'Sint Maarten (dutch Part)', 'SK' => 'Slovakia', 'SI' => 'Slovenia', 'SB' => 'Solomon Islands', 'SO' => 'Somalia', 'ZA' => 'South Africa', 'GS' => 'South Georgia And The South Sandwich Islands', 'SS' => 'South Sudan', 'ES' => 'Spain', 'LK' => 'Sri Lanka', 'SD' => 'Sudan', 'SR' => 'Suriname', 'SJ' => 'Svalbard And Jan Mayen', 'SZ' => 'Swaziland', 'SE' => 'Sweden', 'CH' => 'Switzerland', 'SY' => 'Syrian Arab Republic', 'TW' => 'Taiwan, Province Of China', 'TJ' => 'Tajikistan', 'TZ' => 'Tanzania, United Republic Of', 'TH' => 'Thailand', 'TL' => 'Timor-leste', 'TG' => 'Togo', 'TK' => 'Tokelau', 'TO' => 'Tonga', 'TT' => 'Trinidad And Tobago', 'TN' => 'Tunisia', 'TR' => 'Turkey', 'TM' => 'Turkmenistan', 'TC' => 'Turks And Caicos Islands', 'TV' => 'Tuvalu', 'UG' => 'Uganda', 'UA' => 'Ukraine', 'AE' => 'United Arab Emirates', 'GB' => 'United Kingdom', 'US' => 'United States', 'UM' => 'United States Minor Outlying Islands', 'UY' => 'Uruguay', 'UZ' => 'Uzbekistan', 'VU' => 'Vanuatu', 'VE' => 'Venezuela, Bolivarian Republic Of', 'VN' => 'Viet Nam', 'VG' => 'Virgin Islands, British', 'VI' => 'Virgin Islands, U.s.', 'WF' => 'Wallis And Futuna', 'EH' => 'Western Sahara', 'YE' => 'Yemen', 'ZM' => 'Zambia', 'ZW' => 'Zimbabwe' );
 		
-		add_action( 'init', array( &$this, 'codex_googl_init' ) );
+		add_action( 'init', array( &$this, 'register_post_type' ) );
 		add_action( 'add_meta_boxes', array( &$this, 'add_meta_boxes' ) );
 		add_action( 'edit_form_after_title', array( &$this, 'edit_form_after_title' ) );
+		
 		add_action( 'admin_print_styles', array( &$this, 'admin_print_styles' ) );
 		add_action( 'admin_print_styles', array( &$this, 'inline_edit_styles' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_enqueue_scripts' ) );
+		add_action( 'admin_notices', array( $this, 'admin_notice' ) );
 		
 		add_filter( 'get_shortlink', array( &$this, 'get_shortlink' ), 10, 4 );
 		add_filter( 'post_type_link', array( &$this, 'post_type_link' ), 10, 4 );
 		add_filter( 'manage_edit-'. $this->post_type . '_columns', array( &$this, 'post_columns' ) );
 		add_action( 'manage_posts_custom_column', array( &$this, 'link_column' ) );			
 		add_action( 'manage_posts_custom_column', array( &$this, 'clicks_column' ) );			
-		add_filter( 'wp_insert_post_data', array( &$this, 'insert_post_data' ), 10, 2 );
+		//add_filter( 'wp_insert_post_data', array( &$this, 'insert_post_data' ), 10, 2 );
+		add_action( 'save_post',  array( &$this, 'save_post' ) );		
 		add_filter( 'post_row_actions', array( &$this, 'post_row_actions' ), 10, 2 );		
 	}
 	
+	
+	/**
+	 * Exit if accessed directly
+	 * @since 0.0.2
+	 */	
+	function save_post( $post_id ) {
+
+		// If this is just a revision, don't send the email.
+		if ( wp_is_post_revision( $post_id ) || ! isset( $_POST['long_url'] ) )
+			return;
+
+		$post = get_post( $post_id );	// get unmodified post_content
+		
+		$guid = $_POST['long_url'] ? esc_url( $_POST['long_url'] ) : $post->guid;	
+			
+		if( $res = googlurl_shortener( $guid ) )
+			$post_content = serialize( $res );
+		else
+			$post_content = $post->post_content;		
+		
+		remove_action( 'save_post', array( &$this, 'save_post' ) );
+		
+		// Update the post
+		wp_update_post( array( 
+			'ID' => $post_id, 
+			'guid' => $guid,
+			'post_content' => $post_content
+		));
+		
+		add_action( 'save_post', array( &$this, 'save_post' ) );
+	}
+
+	
+	/**
+	 * Exit if accessed directly
+	 * @since 0.0.2
+	 */		
+	function admin_notice() {
+		global $post, $hook_suffix;
+		
+		// Return if this is not plugin post type page
+		if( 'edit.php' != $hook_suffix || 'post.php' != $hook_suffix )
+			return;		
+		
+		// Return if this is not plugin post type page
+		if( 'edit.php' != $hook_suffix && isset( $_GET['post_type'] ) && $this->post_type != $_GET['post_type'] )
+			return;
+		
+		// Return if this is not plugin post type page
+		if( 'post.php' != $hook_suffix && $this->post_type != $post->post_type )
+			return;
+		
+		// Return if api key is existed
+		if( googlurl_options( 'api_key' ) )
+			return;
+		
+		?>
+		<div class="error">
+			<p><?php _e( '', $this->textdomain ); ?></p>
+			<p><?php printf( __( 'Please provide an API key in the <a href="%1$s">setting page</a> to make this plugin works better! More about <a href="%2$s">acquiring a browser API key</a>.', '$this->textdomain'),
+					admin_url( 'admin.php?page='. GOOGLULR_SLUG ),
+					esc_url( 'https://developers.google.com/api-client-library/python/guide/aaa_apikeys#acquiring-api-keys' ) . '" target="blank' ); ?></p>
+		</div>
+		<?php
+	}
+
 
 	function enter_title_here( $title, $post ) {
 		if( $this->post_type == $post->post_type )
@@ -66,14 +135,33 @@ class Googl_Type {
 	
 	
 	function post_row_actions( $actions, $post ) {
-		if( $this->post_type == $post->post_type && $post->post_content ) {
-			$content = unserialize( $post->post_content );
-			$actions['edit'] = '<a href="' . get_edit_post_link( $post->ID, true ) . '" title="' . esc_attr( __( 'Edit this item', $this->textdomain ) ) . '">' . __( 'Analytic', $this->textdomain ) . '</a>';
+		if( $content = $this->googl_content($post) ) {
+			//$actions['edit'] = '<a href="' . get_edit_post_link( $post->ID, true ) . '" title="' . esc_attr( __( 'Edit this item', $this->textdomain ) ) . '">' . __( 'Analytic or Edit', $this->textdomain ) . '</a>';
 			$actions['view'] = '<a target="_blank" href="' . get_permalink( $post->ID ) . '" title="' . esc_attr( sprintf( __( 'Visit &#8220;%s&#8221;' ), $content->longUrl ) ) . '" rel="permalink">' . __( 'Visit Link', $this->textdomain ) . '</a>';
 		}
+		
 		return $actions;
 	}
 	
+
+	/**
+	 * Get the google post content saved data
+	 * Check if this google post type and has no errors in the post content
+	 * @since 1.0
+	 */		
+	function googl_content( $post ) {
+		if( $this->post_type == $post->post_type && $post->post_content ) {
+			
+			$content = unserialize( $post->post_content );
+			
+			if( isset( $content->error ) )
+				return false;
+			else	
+				return $content;
+		}
+		
+		return false;
+	}
 	
 	function post_type_link( $post_link, $post, $leavename, $sample ) {
 		if( ! in_array( $post->post_status, array( 'publish', 'future', 'private' ) ) )
@@ -95,9 +183,14 @@ class Googl_Type {
 			return $shortlink;
 
 		$data = unserialize( $post->post_content );
-		return $data->id;
-	}
 
+		// Check for Google returned data if on errors
+		if( ! isset( $data->error ) )
+			return $data->id;
+
+		return $shortlink;
+	}
+	
 	
 	/**
 	 * Modify the post content before saving to database
@@ -123,7 +216,9 @@ class Googl_Type {
 		if( ! isset( $long_url ) )
 			return $data;
 		
-		if( $res = googl_urlshortener( $long_url ) )
+		$data['guid'] = $long_url;
+		
+		if( $res = googlurl_shortener( $long_url ) )
 			$data['post_content'] = serialize( $res );
 			
 		return $data;
@@ -134,8 +229,8 @@ class Googl_Type {
 		if( $this->post_type != $post->post_type )
 			return;
 		
-		if( empty( $post->post_content ) )
-			echo '<p><input placeholder="Enter long URL here" type="url" id="long-url" value="" size="30" name="long_url" /></p>';			
+		if( ! $this->googl_content( $post ) )
+			echo '<p><input placeholder="'. __( 'Enter long URL here', $this->textdomain ) .'" type="url" id="long-url" value="" size="30" name="long_url" /></p>';			
 	
 		echo '<input type="hidden" name="googl_nonce" value="' . wp_create_nonce( 'googl_nonce' ) . '" />';
 	}
@@ -154,8 +249,13 @@ class Googl_Type {
 		
 		global $post;
 		$data = unserialize( $post->post_content );
-		echo '<span class="shorturl">'. ( isset( $data->id ) ? $data->id : '-' ) .'</span>';
-		echo '<span class="longurl">'. ( isset( $data->longUrl ) ? $data->longUrl : '-' ) .'</span>';
+		
+		if( isset( $data->id ) )
+			echo '<span class="shorturl">'. $data->id .'</span>';
+		
+		$error_message = isset( $data->error ) ? $data->error->message : '';		
+		
+		echo '<span class="longurl">'. ( isset( $data->longUrl ) ? $data->longUrl : __( 'Error occurs, please shorten again.', $this->textdomain ) ) .'<span class="error">'. $error_message .'</span></span>';
 	}
 	
 	
@@ -175,7 +275,8 @@ class Googl_Type {
 		//remove_meta_box( 'submitdiv', $this->post_type, 'normal' );
 		remove_meta_box( 'slugdiv', $this->post_type, 'normal' );
 		
-		if( ! $post->post_content )
+		// Check if error existed in the post content
+		if( ! $content = $this->googl_content( $post ) )
 			return;
 		
 		add_meta_box( 'clicks', __( 'Clicks', $this->textdomain ), array( &$this, 'meta_box_callback_clicks' ), $this->post_type );		
@@ -202,8 +303,17 @@ class Googl_Type {
 	
 	
 	function meta_box_callback_browsers( $post ) {
-		$data = unserialize( $post->post_content );
+		
+		if( ! $data = $this->googl_content( $post ) )
+			return;
+		
 		$period = 'allTime';
+		
+		if( ! isset( $data->analytics->$period->referrers ) ) {
+			_e( 'Not available', $this->textdomain );
+			return;
+		}		
+
 		$clicks = array();
 		$clicks[] = "['Browsers', 'Count']";
 		foreach( $data->analytics->$period->browsers as $browsers )
@@ -236,8 +346,16 @@ class Googl_Type {
 	
 	
 	function meta_box_callback_platforms( $post ) {
-		$data = unserialize( $post->post_content );
+		if( ! $data = $this->googl_content( $post ) )
+			return;
+		
 		$period = 'allTime';
+		
+		if( ! isset( $data->analytics->$period->referrers ) ) {
+			_e( 'Not available', $this->textdomain );
+			return;
+		}
+		
 		$clicks = array();
 		$clicks[] = "['Platforms', 'Count']";
 		foreach( $data->analytics->$period->platforms as $platforms )
@@ -270,8 +388,16 @@ class Googl_Type {
 	
 	
 	function meta_box_callback_countries( $post ) {
-		$data = unserialize( $post->post_content );
+		if( ! $data = $this->googl_content( $post ) )
+			return;
+		
 		$period = 'allTime';
+		
+		if( ! isset( $data->analytics->$period->referrers ) ) {
+			_e( 'Not available', $this->textdomain );
+			return;
+		}
+		
 		$clicks = array();
 		$clicks[] = "['Countries', 'Count']";
 		foreach( $data->analytics->$period->countries as $countries )
@@ -300,10 +426,15 @@ class Googl_Type {
 	
 	
 	function meta_box_callback_referrers( $post ) {
-		$period = 'allTime';
-		$data = unserialize( $post->post_content );
-		if( ! isset( $data->analytics->$period->referrers ) && ! is_array( $data->analytics->$period->referrers ) )
+		if( ! $data = $this->googl_content( $post ) )
 			return;
+		
+		$period = 'allTime';
+		
+		if( ! isset( $data->analytics->$period->referrers ) ) {
+			_e( 'Not available', $this->textdomain );
+			return;
+		}
 
 		$clicks = array();
 		$clicks[] = "['Referrers', 'Count']";
@@ -337,8 +468,11 @@ class Googl_Type {
 	function meta_box_callback_shortener( $post ) {	
 		$data = unserialize( $post->post_content );
 		$format = get_option( 'date_format' ) .' '. get_option( 'time_format' ); ?>
-		<label for="short-url"><small><?php _e('Short URL', $this->textdomain); ?></small></label>
+		<?php _e('Short URL', $this->textdomain); ?>
 		<input id="short-url" type="text" value="<?php echo $data->id; ?>" readonly="readonly" />
+		
+		<br />
+		<br /><?php _e('Long URL', $this->textdomain); ?>
 		<p class="longurl"><?php echo $data->longUrl; ?></p>
 		<p><?php printf( __( 'Created: %s',$this->textdomain ), mysql2date( $format, $data->created ) ); ?></p>
 		<?php
@@ -349,7 +483,7 @@ class Googl_Type {
 	 * Register a googl post type.
 	 * @doc http://codex.wordpress.org/Function_Reference/register_post_type
 	 */	
-	function codex_googl_init() {
+	function register_post_type() {
 		$labels = array(
 			'name'               => _x( 'Googl', 'post type general name', $this->textdomain ),
 			'singular_name'      => _x( 'Googl', 'post type singular name', $this->textdomain ),
@@ -386,6 +520,7 @@ class Googl_Type {
 		register_post_type( $this->post_type, $args );
 	}	
 	
+	
 	function admin_print_styles() {
 		global $typenow, $hook_suffix;
 		if( ! in_array( $hook_suffix, array( 'post-new.php', 'post.php' ) ) )
@@ -396,11 +531,6 @@ class Googl_Type {
 		?>
 		<style type="text/css">
 			#long-url {
-				background-color: #FFFFFF;
-				line-height: 100%;
-				margin: 0;
-				outline: 0 none;
-				padding: 3px 8px;
 				width: 100%;
 			}
 			.longurl {
@@ -430,7 +560,12 @@ class Googl_Type {
 				font-size: 30px;
 				font-weight: bold;
 				line-height: 30px;
-			}			
+			}
+			.error {
+				display: block;
+				font-size: 11px;
+				line-height: normal;
+			}		
 		</style><?php
 	}
 	
@@ -450,8 +585,14 @@ class Googl_Type {
 		.longurl {
 			color: #999999;
 		}
+		.error {
+			display: block;
+			font-size: 11px;
+			line-height: normal;
+		}		
 		</style><?php
 	}
+	
 	
 	function admin_enqueue_scripts( $hook ) {
 		global $post, $hook_suffix;
